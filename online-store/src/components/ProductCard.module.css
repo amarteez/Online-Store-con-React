@@ -1,0 +1,43 @@
+.productCard {
+    border: 1px solid #000000;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .productImage {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .productName {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+  
+  .productPrice {
+    color: #888;
+    margin-bottom: 10px;
+  }
+  
+  .productLink {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  
+  .productButton {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .productButton:hover {
+    background-color: #0056b3;
+  }
+  

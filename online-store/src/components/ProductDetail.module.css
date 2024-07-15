@@ -1,0 +1,32 @@
+.productDetail {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .productImage {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .productInfo {
+    margin-top: 20px;
+  }
+  
+  .productName {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .productPrice {
+    color: #888;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .productDescription {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  

@@ -1,0 +1,11 @@
+/* Footer.module.css */
+.footer {
+  background-color: transparent;
+  color: #ff0000;
+  padding: 10px 0;
+  position: bottom;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1000;
+}
