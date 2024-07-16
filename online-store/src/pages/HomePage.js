@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import HomeComponent from '../components/HomeComponent';
 import whatsappLogo from '../img-front/whatsapp-logo.png'; // Importa el logo de WhatsApp
 import styles from './HomePage.module.css'; // Asegúrate de que estás importando desde el archivo correcto
@@ -10,9 +11,12 @@ const HomePage = () => {
     <div className={styles['home-page']}>
       <HomeComponent />
       <div className={styles.whatsappContainer}>
-        <br></br>
+        <br />
         <img src={whatsappLogo} alt="WhatsApp" className={styles.whatsappLogo} onClick={() => window.open(whatsappLink, '_blank')} />
       </div>
+      <Link to="/products" className={styles.button}>
+        Mira nuestros productos
+      </Link>
     </div>
   );
 }

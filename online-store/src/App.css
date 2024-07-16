@@ -4,7 +4,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden; /* Evitar scroll horizontal */
-  background-color: #1b1b1b;
+  background-color: #000000;
 }
 
 .App {
