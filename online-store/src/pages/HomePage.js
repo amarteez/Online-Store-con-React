@@ -14,8 +14,10 @@ const HomePage = () => {
         <br />
         <img src={whatsappLogo} alt="WhatsApp" className={styles.whatsappLogo} onClick={() => window.open(whatsappLink, '_blank')} />
       </div>
-      <Link to="/products" className={styles.button}>
+      <Link to="/products">
+      <button className={styles.button}>
         Mira nuestros productos
+      </button>
       </Link>
     </div>
   );
