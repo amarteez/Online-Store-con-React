@@ -1,20 +1,29 @@
-// src/components/Header.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './Header.module.css';
+import logo from '../img-front/img-logo.jpg'; // Ajusta la ruta según tu estructura de directorios
+import styles from './Header.module.css'; // Importa los estilos CSS
 
 const Header = () => {
   return (
     <header className={styles.header}>
-      <img src="/path/to/logo.png" alt="TenkaiTech Logo" />
-      <nav>
-        <Link to="/">Inicio</Link>
-        <Link to="/cart">Carrito</Link>
-        <Link to="/products">Productos</Link>
+      <div className={styles.logo}>
+        <img src={logo} alt="TenkaiTech Logo" />
+      </div>
+      <nav className={styles.nav}>
+        <ul className={styles.navList}>
+          <li>
+            <Link to="/" className={styles.navLink}>Inicio</Link>
+          </li>
+          <li>
+            <Link to="/cart" className={styles.navLink}>Carrito</Link>
+          </li>
+          <li>
+            <Link to="/products" className={styles.navLink}>Productos</Link>
+          </li>
+        </ul>
       </nav>
     </header>
   );
 }
 
 export default Header;
-

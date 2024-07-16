@@ -1,9 +1,15 @@
 .home-page {
-    background-color: #3f1f1f;
+    background-color: #000000;
     padding: 20px;
+    color: rgba(179, 64, 224, 0.767);
+    text-align: center;
 }
 
-.home-page h1 {
-    font-size: 24px;
-    color: #c42424;
-}
+/* HomePage.module.css */
+.whatsappLogo {
+    cursor: pointer; /* Cambia el cursor a pointer para indicar que es un enlace */
+    width: 40px; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Mantiene la proporción */
+    bottom: .1px;
+  }
+  

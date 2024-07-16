@@ -1,7 +1,7 @@
 /* Footer.module.css */
 .footer {
   background-color: transparent;
-  color: #ff0000;
+  color: rgba(179, 64, 224, 0.767);
   padding: 10px 0;
   position: bottom;
   bottom: 0;

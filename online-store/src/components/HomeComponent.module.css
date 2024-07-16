@@ -1,11 +1,24 @@
-/* HomeComponent.module.css */
-.home-component {
-    background-color: #ffffff;
-    padding: 20px;
-  }
-  
-  .home-component h2 {
-    font-size: 20px;
-    color: #333333;
-  }
-  
+.homeComponent {
+  background-color: rgba(179, 64, 224, 0.767);
+  padding: 20px;
+  text-align: center; /* Centrar el contenido */
+}
+
+.bannerImage {
+  width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+  height: auto; /* Mantener la proporción de la imagen */
+  max-height: 500px; /* Ajusta este valor según tu preferencia */
+  object-fit: cover; /* Cubrir el contenedor sin deformar la imagen */
+  margin-bottom: 20px; /* Espacio debajo de la imagen */
+}
+
+.homeComponent h2 {
+  font-size: 24px;
+  color: #000000; /* Color blanco para que el texto sea visible sobre el fondo oscuro */
+  margin: 20px 0; /* Espacio alrededor del título */
+}
+
+.homeComponent p {
+  font-size: 16px;
+  color: #000000; /* Color blanco para que el texto sea visible sobre el fondo oscuro */
+}
