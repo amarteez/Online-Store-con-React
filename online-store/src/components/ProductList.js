@@ -1,3 +1,4 @@
+// src/components/ProductList.js
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import ProductCard from './ProductCard';
@@ -17,11 +18,13 @@ const ProductList = () => {
   }, []);
 
   return (
-    <div className={styles.ProductList}>
+    <div className={styles.productList}>
       <h2>Lista de Productos</h2>
-      <div className="product-list">
+      <div className={styles.productListGrid}>
         {products.map(product => (
-          <ProductCard key={product.id} product={product} />
+          <div key={product.id} className={styles.productListItem}>
+            <ProductCard product={product} />
+          </div>
         ))}
       </div>
     </div>
@@ -29,4 +32,3 @@ const ProductList = () => {
 }
 
 export default ProductList;
-

@@ -1,12 +1,21 @@
+/* src/components/ProductList.module.css */
 .productList {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  
-  .productListItem {
-    flex: 1 0 21%;
-    margin: 10px;
-    box-sizing: border-box;
-  }
-  
+  padding: 20px;
+}
+
+.productList h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.productListGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.productListItem {
+  flex: 1 0 21%;
+  margin: 10px;
+  box-sizing: border-box;
+}
