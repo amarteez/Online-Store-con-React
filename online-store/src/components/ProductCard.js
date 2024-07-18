@@ -1,18 +1,34 @@
 // src/components/ProductCard.js
+import PropTypes from 'prop-types';
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styles from './ProductCard.module.css';
 
 const ProductCard = ({ product }) => {
   return (
     <div className={styles.productCard}>
-      <img src={product.image_url} alt={product.name} className={styles.productImage} />
       <h3 className={styles.productName}>{product.name}</h3>
+      {product.image ? (
+        <img src={product.image} alt={product.name} className={styles.productImage} />
+      ) : (
+        <div className={styles.productImagePlaceholder}>No Image Available</div>
+      )}
       <p className={styles.productDescription}>{product.description}</p>
-      <p className={styles.productPrice}>${product.price}</p>
-      <Link to={`/products/${product.id}`} className={styles.viewDetailButton}>View Details</Link>
+      <div className={styles.productFooter}>
+        <button className={styles.infoButton}>Info</button>
+        <div className={styles.productPrice}>${product.price}</div>
+        <button className={styles.addToCartButton}>Add to Cart</button>
+      </div>
     </div>
   );
+}
+
+ProductCard.propTypes = {
+  product: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    image: PropTypes.string,
+    description: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+  }).isRequired,
 };
 
 export default ProductCard;

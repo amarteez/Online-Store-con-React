@@ -17,16 +17,30 @@ const ProductList = () => {
       });
   }, []);
 
+  // Organize products by category
+  const categories = products.reduce((acc, product) => {
+    const category = product.category.name || 'Others';
+    if (!acc[category]) {
+      acc[category] = [];
+    }
+    acc[category].push(product);
+    return acc;
+  }, {});
+
   return (
     <div className={styles.productList}>
-      <h2>Lista de Productos</h2>
-      <div className={styles.productListGrid}>
-        {products.map(product => (
-          <div key={product.id} className={styles.productListItem}>
-            <ProductCard product={product} />
+      {Object.keys(categories).map(category => (
+        <div key={category}>
+          <h2 className={styles.categoryTitle}>{category}</h2>
+          <div className={styles.productListGrid}>
+            {categories[category].map(product => (
+              <div key={product.id} className={styles.productListItem}>
+                <ProductCard product={product} />
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
   );
 }

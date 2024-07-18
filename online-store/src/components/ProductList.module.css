@@ -1,21 +1,21 @@
-/* src/components/ProductList.module.css */
 .productList {
-  padding: 20px;
+  padding: 16px;
+  background-color: #333;
+  color: white;
 }
 
-.productList h2 {
-  text-align: center;
-  margin-bottom: 20px;
+.categoryTitle {
+  font-size: 1.5em;
+  margin-bottom: 16px;
 }
 
 .productListGrid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  gap: 16px;
 }
 
 .productListItem {
-  flex: 1 0 21%;
-  margin: 10px;
-  box-sizing: border-box;
+  flex: 1 1 calc(33.333% - 32px);
+  margin-bottom: 16px;
 }
